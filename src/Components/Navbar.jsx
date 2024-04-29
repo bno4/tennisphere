@@ -8,16 +8,24 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <img src={logo} alt="Logo" />
-        <p>Tennispot</p>
+        <img src={logo} alt="Logo" />{" "}
+        <p
+          onClick={() => {
+            setMenu("home");
+          }}
+        >
+          <Link to="/">TenniSphère </Link>
+        </p>
       </div>
+
       <ul className="navbar__menu">
         <li
           onClick={() => {
             setMenu("shop");
           }}
         >
-          <Link to="/">Shop</Link> {menu === "shop" ? <hr /> : <></>}
+          <Link to="/">Shop</Link>
+          {menu === "shop" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {

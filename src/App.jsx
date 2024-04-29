@@ -10,7 +10,6 @@ function App() {
   return (
     <div>
       <HashRouter>
-        {" "}
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
