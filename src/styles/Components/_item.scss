@@ -1,7 +1,10 @@
 .item {
-  width: 350px;
+  max-width: 300px;
   transition: all 500ms;
   margin-top: 50px;
+  img {
+    width: 100%;
+  }
   p {
     margin: 6px 0;
   }
@@ -21,6 +24,6 @@
     }
   }
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
